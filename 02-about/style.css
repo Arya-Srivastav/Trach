@@ -1,0 +1,20 @@
+body { margin: 0; font-family: Arial, sans-serif; background: #F7F3ED; color: #17324D; }
+header { background: #17324D; color: white; padding: 18px 7%; }
+nav { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 28px; font-weight: bold; letter-spacing: 1px; }
+.nav-links a { color: white; text-decoration: none; margin-left: 18px; font-size: 14px; }
+.nav-links a:hover { color: #E6B65C; }
+.container { width: 86%; max-width: 1100px; margin: 0 auto; padding: 55px 0; }
+.eyebrow { color: #2A7F7F; font-weight: bold; letter-spacing: 2px; font-size: 13px; }
+h1 { font-size: 44px; margin: 12px 0 20px; }
+h2 { color: #17324D; }
+.lead { max-width: 800px; color: #586978; font-size: 18px; line-height: 1.7; }
+.highlight { background: #2A7F7F; color: white; border-radius: 14px; padding: 28px; margin: 30px 0; }
+.highlight h2 { color: white; }
+.card-row { display: flex; gap: 18px; flex-wrap: wrap; }
+.card { flex: 1; min-width: 210px; background: white; padding: 24px; border-radius: 12px; box-shadow: 0 5px 15px #17324D10; }
+.card h3 { color: #E07A5F; }
+.card p { color: #667482; line-height: 1.6; }
+.note { background: #FFF3D9; border-left: 5px solid #E6B65C; padding: 16px; margin-top: 28px; color: #5d4a24; }
+footer { background: #17324D; color: white; text-align: center; padding: 24px; }
+@media (max-width: 700px) { nav { display: block; } .nav-links a { display: inline-block; margin: 12px 10px 0 0; } h1 { font-size: 36px; } }
