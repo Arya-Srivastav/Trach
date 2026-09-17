@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trach Questionnaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">Trach</div>
+        <div class="nav-links">
+            <a href="../01-home/index.html">Home</a>
+            <a href="../02-about/about.html">About</a>
+            <a href="../03-how-it-works/how-it-works.html">How It Works</a>
+            <a href="../04-questionnaire/questionnaire.html">Questionnaire</a>
+            <a href="../06-matches/matches.html">Matches</a>
+        </div>
+    </nav>
+</header>
+
+<main class="container">
+    <p class="eyebrow">25 QUESTIONS</p>
+    <h1>Tell us about yourself</h1>
+    <p class="lead">
+        Answer the sample questions below. This frontend prototype does not
+        store the answers.
+    </p>
+
+    <form action="../05-result/result.html">
+
+        <section class="question-box">
+            <h2>Habits</h2>
+
+            <div class="question">
+                <label>1. What time do you usually sleep?</label>
+                <select name="sleep">
+                    <option>Before 10 PM</option>
+                    <option>10 PM - 12 AM</option>
+                    <option>12 AM - 2 AM</option>
+                    <option>After 2 AM</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label>2. How clean do you like your room?</label>
+                <select name="clean">
+                    <option>Very clean</option>
+                    <option>Mostly clean</option>
+                    <option>Normal</option>
+                    <option>I am relaxed about it</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label>3. How often do you study in your room?</label>
+                <select name="study">
+                    <option>Every day</option>
+                    <option>Often</option>
+                    <option>Sometimes</option>
+                    <option>Rarely</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label>4. How comfortable are you with room noise?</label>
+                <select name="noise">
+                    <option>Very quiet</option>
+                    <option>A little noise</option>
+                    <option>Normal noise</option>
+                    <option>I do not mind noise</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label>5. How organized are your daily things?</label>
+                <select name="organized">
+                    <option>Very organized</option>
+                    <option>Mostly organized</option>
+                    <option>Somewhat organized</option>
+                    <option>Not very organized</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label>6. When do you usually wake up?</label>
+                <select name="wake">
+                    <option>Before 6 AM</option>
+                    <option>6 AM - 8 AM</option>
+                    <option>8 AM - 10 AM</option>
+                    <option>After 10 AM</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="question-box">
+            <h2>Preferences</h2>
+
+            <div class="question">
+                <label>7. How important is cleanliness in a roommate?</label>
+                <select name="pclean">
+                    <option>Very important</option>
+                    <option>Important</option>
+                    <option>Somewhat important</option>
+                    <option>Not very important</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label>8. What noise level would you prefer?</label>
+                <select name="pnoise">
+                    <option>Silent</option>
+                    <option>Mostly quiet</option>
+                    <option>Normal</option>
+                    <option>Lively</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label>9. Do you prefer a roommate who follows a routine?</label>
+                <select name="routine">
+                    <option>Yes, strongly</option>
+                    <option>Yes, somewhat</option>
+                    <option>No preference</option>
+                    <option>Not really</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label>10. How important is personal space?</label>
+                <select name="space">
+                    <option>Very important</option>
+                    <option>Important</option>
+                    <option>Somewhat important</option>
+                    <option>Not very important</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label>11. Are you comfortable sharing common items?</label>
+                <select name="sharing">
+                    <option>Very comfortable</option>
+                    <option>Mostly comfortable</option>
+                    <option>Sometimes</option>
+                    <option>Not comfortable</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label>12. How often do you like talking to your roommate?</label>
+                <select name="talking">
+                    <option>Very often</option>
+                    <option>Often</option>
+                    <option>Sometimes</option>
+                    <option>Rarely</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="question-box">
+            <h2>Interests</h2>
+
+            <div class="question">
+                <label>13. Which hobby do you enjoy most?</label>
+                <select name="hobby">
+                    <option>Cricket</option>
+                    <option>Music</option>
+                    <option>Movies</option>
+                    <option>Gaming</option>
+                    <option>Reading</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label>14. Do you enjoy watching sports?</label>
+                <select name="sports">
+                    <option>Very much</option>
+                    <option>Often</option>
+                    <option>Sometimes</option>
+                    <option>Not really</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label>15. How often do you listen to music?</label>
+                <select name="music">
+                    <option>All the time</option>
+                    <option>Every day</option>
+                    <option>Sometimes</option>
+                    <option>Rarely</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label>16. Do you enjoy movies or series?</label>
+                <select name="movies">
+                    <option>Very much</option>
+                    <option>Often</option>
+                    <option>Sometimes</option>
+                    <option>Not really</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label>17. Do you enjoy gaming?</label>
+                <select name="gaming">
+                    <option>Very much</option>
+                    <option>Often</option>
+                    <option>Sometimes</option>
+                    <option>Not really</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="question-box">
+            <h2>Personality</h2>
+
+            <div class="question">
+                <label>18. I enjoy trying new things.</label>
+                <input type="radio" name="q18" value="1"> 1
+                <input type="radio" name="q18" value="2"> 2
+                <input type="radio" name="q18" value="3" checked> 3
+                <input type="radio" name="q18" value="4"> 4
+                <input type="radio" name="q18" value="5"> 5
+            </div>
+
+            <div class="question">
+                <label>19. I am comfortable meeting new people.</label>
+                <input type="radio" name="q19" value="1"> 1
+                <input type="radio" name="q19" value="2"> 2
+                <input type="radio" name="q19" value="3" checked> 3
+                <input type="radio" name="q19" value="4"> 4
+                <input type="radio" name="q19" value="5"> 5
+            </div>
+
+            <div class="question">
+                <label>20. I stay calm when problems happen.</label>
+                <input type="radio" name="q20" value="1"> 1
+                <input type="radio" name="q20" value="2"> 2
+                <input type="radio" name="q20" value="3" checked> 3
+                <input type="radio" name="q20" value="4"> 4
+                <input type="radio" name="q20" value="5"> 5
+            </div>
+
+            <div class="question">
+                <label>21. I like planning things before doing them.</label>
+                <input type="radio" name="q21" value="1"> 1
+                <input type="radio" name="q21" value="2"> 2
+                <input type="radio" name="q21" value="3" checked> 3
+                <input type="radio" name="q21" value="4"> 4
+                <input type="radio" name="q21" value="5"> 5
+            </div>
+
+            <div class="question">
+                <label>22. I easily understand other people's feelings.</label>
+                <input type="radio" name="q22" value="1"> 1
+                <input type="radio" name="q22" value="2"> 2
+                <input type="radio" name="q22" value="3" checked> 3
+                <input type="radio" name="q22" value="4"> 4
+                <input type="radio" name="q22" value="5"> 5
+            </div>
+
+            <div class="question">
+                <label>23. I am comfortable taking the lead.</label>
+                <input type="radio" name="q23" value="1"> 1
+                <input type="radio" name="q23" value="2"> 2
+                <input type="radio" name="q23" value="3" checked> 3
+                <input type="radio" name="q23" value="4"> 4
+                <input type="radio" name="q23" value="5"> 5
+            </div>
+
+            <div class="question">
+                <label>24. I enjoy quiet time by myself.</label>
+                <input type="radio" name="q24" value="1"> 1
+                <input type="radio" name="q24" value="2"> 2
+                <input type="radio" name="q24" value="3" checked> 3
+                <input type="radio" name="q24" value="4"> 4
+                <input type="radio" name="q24" value="5"> 5
+            </div>
+
+            <div class="question">
+                <label>25. I can adapt when plans change.</label>
+                <input type="radio" name="q25" value="1"> 1
+                <input type="radio" name="q25" value="2"> 2
+                <input type="radio" name="q25" value="3" checked> 3
+                <input type="radio" name="q25" value="4"> 4
+                <input type="radio" name="q25" value="5"> 5
+            </div>
+        </section>
+
+        <button class="button" type="submit">See Sample Analysis</button>
+    </form>
+</main>
+
+<footer>
+    <p>Trach &bull; Questionnaire</p>
+</footer>
+</body>
+</html>
