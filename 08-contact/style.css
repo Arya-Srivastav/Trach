@@ -1,0 +1,22 @@
+body { margin: 0; font-family: Arial, sans-serif; background: #F7F3ED; color: #17324D; }
+header { background: #17324D; color: white; padding: 18px 7%; }
+nav { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 28px; font-weight: bold; letter-spacing: 1px; }
+.nav-links a { color: white; text-decoration: none; margin-left: 18px; font-size: 14px; }
+.nav-links a:hover { color: #E6B65C; }
+.container { width: 86%; max-width: 1000px; margin: 0 auto; padding: 50px 0; }
+.eyebrow { color: #2A7F7F; font-weight: bold; letter-spacing: 2px; font-size: 13px; }
+h1 { font-size: 44px; margin: 10px 0 12px; }
+.lead { color: #667482; line-height: 1.6; }
+.contact-card { display: flex; gap: 25px; background: white; padding: 30px; border-radius: 14px; margin-top: 28px; box-shadow: 0 4px 14px #17324D10; }
+.contact-info { flex: 1; background: #2A7F7F; color: white; border-radius: 12px; padding: 28px; }
+.contact-info h2 { color: white; }
+.contact-info p { line-height: 1.6; }
+.form-side { flex: 1; }
+.question { margin-bottom: 18px; }
+.question label { display: block; font-weight: bold; margin-bottom: 8px; }
+input, textarea { width: 100%; box-sizing: border-box; padding: 11px; border: 1px solid #CCD5DB; border-radius: 6px; font-family: Arial, sans-serif; }
+textarea { min-height: 140px; resize: vertical; }
+.button { display: inline-block; padding: 13px 22px; background: #E07A5F; color: white; text-decoration: none; border-radius: 7px; font-weight: bold; }
+footer { background: #17324D; color: white; text-align: center; padding: 24px; margin-top: 45px; }
+@media (max-width: 700px) { nav { display: block; } .nav-links a { display: inline-block; margin: 12px 10px 0 0; } h1 { font-size: 35px; } .contact-card { flex-direction: column; } }
