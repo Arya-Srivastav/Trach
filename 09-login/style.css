@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background: #F7F3ED;
+    color: #17324D;
+}
+
+header,
+footer {
+    background: #17324D;
+    color: white;
+    padding: 18px 7%;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links a {
+    margin-left: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover,
+.text-link:hover {
+    color: #E6B65C;
+}
+
+.auth-container {
+    width: 90%;
+    max-width: 480px;
+    margin: auto;
+    padding: 48px 0;
+}
+
+.auth-card {
+    padding: 36px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px #17324D14;
+}
+
+.eyebrow {
+    color: #2A7F7F;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 38px;
+}
+
+label {
+    display: block;
+    margin: 18px 0 7px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd2d8;
+    border-radius: 7px;
+    font: inherit;
+}
+
+input:focus {
+    outline: 2px solid #2A7F7F;
+    border-color: transparent;
+}
+
+button,
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 13px 22px;
+    border: 0;
+    border-radius: 7px;
+    background: #E07A5F;
+    color: white;
+    font: inherit;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover,
+.button:hover {
+    background: #c86249;
+}
+
+.message {
+    min-height: 24px;
+    line-height: 1.5;
+}
+
+.privacy-note {
+    margin-top: 25px;
+    color: #667482;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.text-link {
+    display: block;
+    margin-top: 18px;
+    color: #2A7F7F;
+}
+
+footer {
+    text-align: center;
+}
+
+@media (max-width: 520px) {
+    header {
+        padding: 16px 5%;
+    }
+
+    .auth-card {
+        padding: 26px 20px;
+    }
+}

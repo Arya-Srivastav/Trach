@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Trach</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="../shared/auth.js" defer></script>
+</head>
+<body>
+<header>
+    <nav>
+        <a class="logo" href="../01-home/index.html">Trach</a>
+        <div class="nav-links">
+            <a href="../01-home/index.html">Home</a>
+            <a href="../02-about/about.html">About</a>
+        </div>
+    </nav>
+</header>
+
+<main class="auth-container">
+    <section class="auth-card">
+        <p class="eyebrow">WELCOME TO TRACH</p>
+        <h1>Login</h1>
+        <p>Enter your details to try the local demo.</p>
+
+        <form id="login-form">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" autocomplete="current-password" required>
+
+            <button type="submit">Login</button>
+            <p id="form-message" class="message" aria-live="polite"></p>
+        </form>
+
+        <p class="privacy-note">
+            This demo saves your name and email in this browser and downloads
+            them as <strong>logins.json</strong>. Move the downloaded file into
+            the project's <strong>data</strong> folder if you want it there.
+            Your password is never saved or included. This is not a real account system.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>Trach &bull; Roommate Matching Concept</p>
+</footer>
+
+<script>
+    const loginForm = document.getElementById("login-form");
+    const formMessage = document.getElementById("form-message");
+
+    loginForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const userDetails = {
+            name: document.getElementById("name").value.trim(),
+            email: document.getElementById("email").value.trim()
+        };
+
+        const jsonFile = new Blob(
+            [JSON.stringify([userDetails], null, 2)],
+            { type: "application/json" }
+        );
+        const downloadLink = document.createElement("a");
+        const fileUrl = URL.createObjectURL(jsonFile);
+
+        downloadLink.href = fileUrl;
+        downloadLink.download = "logins.json";
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        downloadLink.remove();
+        setTimeout(function () {
+            URL.revokeObjectURL(fileUrl);
+        }, 1000);
+
+        try {
+            localStorage.setItem("trachUser", JSON.stringify(userDetails));
+            formMessage.textContent = "Login successful. Taking you home...";
+            window.location.href = "../01-home/index.html";
+        } catch (error) {
+            console.error("Could not save your login details.", error);
+            formMessage.textContent = "We could not save your details in this browser.";
+        }
+    });
+</script>
+</body>
+</html>
