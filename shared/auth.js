@@ -25,11 +25,26 @@ function getSignedInUser() {
 function addLoginNavigation() {
     const navigation = document.querySelector(".nav-links");
 
+    const user = getSignedInUser();
+    const profileName = document.getElementById("profile-name");
+    const profileAvatar = document.getElementById("profile-avatar");
+
+    if (user && typeof user.name === "string" && user.name.trim()) {
+        const name = user.name.trim();
+
+        if (profileName) {
+            profileName.textContent = name;
+        }
+
+        if (profileAvatar) {
+            profileAvatar.textContent = name.charAt(0).toUpperCase();
+        }
+    }
+
     if (!navigation) {
         return;
     }
 
-    const user = getSignedInUser();
     const authLink = document.createElement("a");
 
     if (user) {
