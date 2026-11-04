@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout - Trach</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="../shared/auth.js" defer></script>
+</head>
+<body>
+<header>
+    <nav>
+        <a class="logo" href="../01-home/index.html">Trach</a>
+        <div class="nav-links">
+            <a href="../01-home/index.html">Home</a>
+            <a href="../02-about/about.html">About</a>
+        </div>
+    </nav>
+</header>
+
+<main class="auth-container">
+    <section class="auth-card">
+        <p class="eyebrow">TRACH ACCOUNT</p>
+        <h1>Logout</h1>
+        <p id="logout-message" class="message" aria-live="polite"></p>
+        <a class="button" href="login.html">Login again</a>
+        <a class="text-link" href="../01-home/index.html">Return to Home</a>
+    </section>
+</main>
+
+<footer>
+    <p>Trach &bull; Roommate Matching Concept</p>
+</footer>
+
+<script>
+    const logoutMessage = document.getElementById("logout-message");
+
+    try {
+        localStorage.removeItem("trachUser");
+        logoutMessage.textContent = "You are now logged out. Your saved login details were removed.";
+    } catch (error) {
+        console.error("Could not remove your saved login details.", error);
+        logoutMessage.textContent = "We could not clear your login details in this browser.";
+    }
+</script>
+</body>
+</html>
